@@ -1,10 +1,19 @@
 footer {
+	padding: 0.5%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	margin-top: 0.5%;
-	// border: 3px solid rebeccapurple;
+	border-top: 1px solid @font-color;
+	@media @tablet {
+		padding: 1%;
+		border-top: 3px solid @font-color;
+	}
 	p {
+		justify-self: center;
 		font-size: 2rem;
 		color: @font-color;
+		@media @tablet {
+			font-size: 3rem;
+		}
 	}
 }

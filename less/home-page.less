@@ -2,50 +2,98 @@ section {
 	display: flex;
 	width: 100%;
 	height: 100vh;
+	@media @tablet {
+		width: 100vw;
+		height: 60vh;
+	}
 	img {
 		width: 100%;
 		height: 100%;
 		max-width: 1920px;
+		@media @tablet {
+			// width: 100vw;
+			// height: 60vh;
+			max-width: 1000px;
+		}
 	}
 }
 main {
 	width: 100%;
 	height: 100vh;
-	.flex-jcenter();
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 1px solid red;
-	h2 {
-		margin: 2%;
-		font-size: 2.5rem;
-		justify-content: center;
-		// border: 1px solid yellow;
-	}
-	p {
-		line-height: 1.5;
-		a {
-			text-decoration: none;
-			color: @font-color;
-			&:hover {
-				color: white;
+	// border: 1px solid red;
+	.text {
+		width: 60%;
+		margin: 5%;
+		display: flex;
+		align-self: center;
+		flex-direction: column;
+		border: 4px solid @btn-bg;
+		border-radius: 1%;
+		@media @tablet {
+			width: 80%;
+			margin: auto;
+		}
+		h2 {
+			margin: 2%;
+			font-size: 4rem;
+			align-self: center;
+			// border: 1px solid yellow;
+			@media @tablet {
+				font-size: 5rem;
+			}
+		}
+		p {
+			margin: 1%;
+			font-size: 3rem;
+			line-height: 1.5;
+			text-align: center;
+			@media @tablet {
+				font-size: 4rem;
+			}
+			span {
+				color: @btn-color;
+			}
+			a {
+				text-decoration: none;
+				color: @btn-bg;
+				&:hover {
+					color: @btn-hover;
+				}
 			}
 		}
 	}
-	button {
-		width: 10%;
-		margin: 2%;
-		font-size: 2rem;
-		color: @font-color;
-		background: @btn-bg;
-		border: 2px solid @font-color;
-		border-radius: 5%;
+	// button {
+	// 	width: 10%;
+	// 	margin: 2%;
+	// 	font-size: 2rem;
+	// 	color: @font-color;
+	// 	background: @btn-bg;
+	// 	border: 2px solid @font-color;
+	// 	border-radius: 5%;
+	// }
+	.social {
+		margin-top: 2.5%;
+		font-size: 2.8rem;
+		// border: 1px solid yellow;
+		@media @tablet {
+			font-size: 4rem;
+		}
 	}
 	.icons {
 		width: 20%;
-		margin: 1%;
+		margin: 2%;
+		color: @btn-color;
+		font-size: 3.3rem;
 		display: flex;
 		text-align: center;
 		justify-content: space-evenly;
 		// border: 1px solid gray;
+		@media @tablet {
+			font-size: 5rem;
+			margin: 3%;
+		}
 	}
 }
