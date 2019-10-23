@@ -1,0 +1,8 @@
+{
+    "cSpell.ignoreWords": [
+        "flex",
+        "jcenter"
+    ],
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2
+}
