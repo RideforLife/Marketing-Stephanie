@@ -36,13 +36,21 @@ main {
 			width: 80%;
 			margin: auto;
 		}
+		@media @mobile {
+			margin-top: 5%;
+		}
 		h2 {
 			margin: 2%;
+			font-weight: bold;
 			font-size: 4rem;
 			align-self: center;
 			// border: 1px solid yellow;
 			@media @tablet {
 				font-size: 5rem;
+			}
+			@media @mobile {
+				font-size: 4rem;
+				text-align: center;
 			}
 		}
 		p {
@@ -52,6 +60,10 @@ main {
 			text-align: center;
 			@media @tablet {
 				font-size: 4rem;
+			}
+			@media @mobile {
+				font-size: 3rem;
+				line-height: 1.2;
 			}
 			span {
 				color: @btn-color;
@@ -81,11 +93,14 @@ main {
 		@media @tablet {
 			font-size: 4rem;
 		}
+		@media @mobile {
+			font-size: 2.8rem;
+		}
 	}
 	.icons {
 		width: 20%;
 		margin: 2%;
-		color: @btn-color;
+
 		font-size: 3.3rem;
 		display: flex;
 		text-align: center;
@@ -94,6 +109,12 @@ main {
 		@media @tablet {
 			font-size: 5rem;
 			margin: 3%;
+		}
+		@media @mobile {
+			font-size: 3.3rem;
+		}
+		a {
+			color: @btn-color;
 		}
 	}
 }

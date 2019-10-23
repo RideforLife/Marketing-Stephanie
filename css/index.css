@@ -158,9 +158,20 @@ html h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container header {
+    flex-direction: column;
+  }
+}
 .container header div {
   width: 60%;
   margin-left: 2.5%;
+}
+@media (max-width: 500px) {
+  .container header div {
+    width: 100%;
+    margin: 2%;
+  }
 }
 .container header div h1 {
   color: #e6e8e5;
@@ -168,6 +179,11 @@ html h1 {
 @media (max-width: 800px) {
   .container header div h1 {
     font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .container header div h1 {
+    font-size: 4rem;
   }
 }
 .container header nav {
@@ -181,6 +197,13 @@ html h1 {
     width: 35%;
   }
 }
+@media (max-width: 500px) {
+  .container header nav {
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .container header nav a {
   text-decoration: none;
   color: #e6e8e5;
@@ -189,6 +212,14 @@ html h1 {
 @media (max-width: 800px) {
   .container header nav a {
     font-size: 2.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    margin: 1%;
+    padding: 2%;
+    font-size: 1.5rem;
+    border-top: 2px solid #e6e8e5;
   }
 }
 .container header nav a:hover {
@@ -215,6 +246,12 @@ footer p {
 @media (max-width: 800px) {
   footer p {
     font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  footer p {
+    margin: 1%;
+    font-size: 2rem;
   }
 }
 section {
@@ -260,14 +297,26 @@ main .text {
     margin: auto;
   }
 }
+@media (max-width: 500px) {
+  main .text {
+    margin-top: 5%;
+  }
+}
 main .text h2 {
   margin: 2%;
+  font-weight: bold;
   font-size: 4rem;
   align-self: center;
 }
 @media (max-width: 800px) {
   main .text h2 {
     font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  main .text h2 {
+    font-size: 4rem;
+    text-align: center;
   }
 }
 main .text p {
@@ -279,6 +328,12 @@ main .text p {
 @media (max-width: 800px) {
   main .text p {
     font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  main .text p {
+    font-size: 3rem;
+    line-height: 1.2;
   }
 }
 main .text p span {
@@ -300,10 +355,14 @@ main .social {
     font-size: 4rem;
   }
 }
+@media (max-width: 500px) {
+  main .social {
+    font-size: 2.8rem;
+  }
+}
 main .icons {
   width: 20%;
   margin: 2%;
-  color: #3cdbd3;
   font-size: 3.3rem;
   display: flex;
   text-align: center;
@@ -314,6 +373,14 @@ main .icons {
     font-size: 5rem;
     margin: 3%;
   }
+}
+@media (max-width: 500px) {
+  main .icons {
+    font-size: 3.3rem;
+  }
+}
+main .icons a {
+  color: #3cdbd3;
 }
 .about-container {
   width: 100%;

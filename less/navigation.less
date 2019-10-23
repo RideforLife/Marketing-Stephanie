@@ -7,14 +7,24 @@
 		display: flex;
 		justify-content: space-between;
 		// border: 1px solid red;
+		@media @mobile {
+			flex-direction: column;
+		}
 		div {
 			width: 60%;
 			margin-left: 2.5%;
 			// border: 1px solid yellow;
+			@media @mobile {
+				width: 100%;
+				margin: 2%;
+			}
 			h1 {
 				color: @font-color;
 				@media @tablet {
 					font-size: 5rem;
+				}
+				@media @mobile {
+					font-size: 4rem;
 				}
 			}
 		}
@@ -27,6 +37,11 @@
 			@media @tablet {
 				width: 35%;
 			}
+			@media @mobile {
+				width: 50%;
+				flex-direction: column;
+				text-align: center;
+			}
 			a {
 				text-decoration: none;
 				color: @font-color;
@@ -34,6 +49,12 @@
 				// border: 1px solid rebeccapurple;
 				@media @tablet {
 					font-size: 2.3rem;
+				}
+				@media @mobile {
+					margin: 1%;
+					padding: 2%;
+					font-size: 1.5rem;
+					border-top: 2px solid @font-color;
 				}
 				&:hover {
 					color: white;
