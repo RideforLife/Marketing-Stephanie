@@ -382,3 +382,45 @@ main .icons {
 main .icons a {
   color: #3cdbd3;
 }
+#about-h1 {
+  width: 90%;
+  margin-left: 2.5%;
+}
+@media (max-width: 500px) {
+  #about-h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  #about-main {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 500px) {
+  #about-main h2 {
+    padding-top: 40%;
+  }
+}
+@media (max-width: 500px) {
+  #about-main .about-section {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 500px) {
+  #about-main .about-section .people-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #about-main .about-section .people-text p {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 500px) {
+  #about-main .about-section .people-text a {
+    font-size: 1rem;
+  }
+}
