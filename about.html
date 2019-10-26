@@ -5,57 +5,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ride for Life Marketing</title>
+  <title>Ride for Life - About</title>
   <link rel="stylesheet" type="text/css" href="css/index.css">
 
   <script src="https://kit.fontawesome.com/7480e09796.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Modak|Roboto&display=swap" rel="stylesheet">
+  <style>
+    #about-main {
+      width: 100%;
+      height: 100%;
+      margin-left: 2.5%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #about-main h2 {
+      width: 80%;
+      font-size: 3rem;
+      color: #3cdbd3;
+      font-weight: bold;
+      margin: 8% 5% 2.5% 5%;
+      text-align: center;
+    }
+
+    .about-section {
+      width: 40%;
+      height: 40%;
+      margin: 2%;
+      display: flex;
+      justify-items: space-around;
+      align-items: center;
+    }
+
+    .people {
+      border: 4px solid #85a04f;
+      width: 50%;
+      margin-right: 2%;
+    }
+
+    .people-text a {
+      color: #3cdbd3;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
   <!--navigation.less-->
-  <div class="about-container">
+  <div class="container">
     <header class="about-header">
+      <!-- <style>
+        .about-header {
+        }
+      </style> -->
+
       <div class="about-div">
         <h1 id="about-h1">SAFE - Ride for Life</h1>
       </div>
       <nav class="about-nav">
         <a href="index.html">HOME</a>
-        <a href="#">SIGN UP</a>
-        <a href="#">LOG IN</a>
+        <a href="https://rfl.netlify.com/register/role">SIGN UP</a>
+        <a href="https://rfl.netlify.com/login">LOG IN</a>
       </nav>
     </header>
 
-    <!--home-page.less-->
-    <!-- <section> -->
-    <!--SPLASH IMAGE-->
-    <!-- <img src="img/africa-african-baby-belly-2781219.jpg" /> -->
-    <!--Photo by George Jr Kamau from Pexels-->
-    <!-- </section> -->
-
-    <main id="about">
-      <!-- <div class="text"> -->
+    <main id="about-main">
       <h2>Get to know our team!</h2>
-      <p>About about about about about about about.</p>
-      <p><a href="#">Sign up</a> or <a href="#">log in</a> to get started.</p>
-      <!-- </div> -->
-      <button>
-        BUTTON!
-      </button>
-      <p>Follow us on social media:</p>
-      <div class="icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin-in"></i>
-      </div>
-      <!--icons closure-->
-    </main>
 
-    <footer>
-      <nav class="bottom-nav">
-        <p>&copy; Stephanie Butenhof 2019</p>
-      </nav>
-    </footer>
+      <section class="about-section">
+
+        <img class="people" src="img/ArinRamer.png" alt="Photo of Arin Ramer" />
+
+        <div class="people-text">
+          <h3>Arin Ramer</h3>
+          <p>React II Developer</p>
+          <a href="http://github.com/arinramer">GitHub Portfolio</a>
+        </div>
+        <!--text closure-->
+
+      </section>
+
+      <section class="about-section">
+        <img class="people" src="img/JonathanHo.png" alt="Photo of Jonathan Ho" />
+        <div class="people-text">
+          <h3>Jonathan Ho</h3>
+          <p>Backend Developer</p>
+          <a href="https://github.com/Jonathan-YungHsin-Ho">GitHub Portfolio</a>
+        </div>
+        <!--text closure-->
+      </section>
+      <section class="about-section">
+        <img class="people" src="img/MarkKing.png" alt="Photo of Mark King" />
+        <div class="people-text">
+          <h3>Mark King</h3>
+          <p>React I Developer</p>
+          <a href="https://www.github.com/markpkng">GitHub Portfolio</a>
+        </div>
+        <!--text closure-->
+      </section>
+      <section class="about-section">
+        <img class="people" src="img/RobertGordon.png" alt="Photo of Robert Gordon" />
+        <div class="people-text">
+          <h3>Robert Gordon</h3>
+          <p>UI Developer</p>
+          <a href="https://github.com/RobertDGordon">GitHub Portfolio</a>
+        </div>
+        <!--text closure-->
+      </section>
+      <section class="about-section">
+        <img class="people" src="img/StephanieButenhof.png" alt="Photo of Stephanie Butenhof" />
+        <div class="people-text">
+          <h3>Stephanie Butenhof</h3>
+          <p>UI Developer</p>
+          <a href="https://github.com/SeeStephSay">GitHub Portfolio</a>
+        </div>
+        <!--text closure-->
+      </section>
+      <section class="about-section">
+        <img class="people" src="img/ThomasUtsey.png" alt="Photo of Thomas Utsey" />
+        <div class="people-text">
+          <h3>Thomas Utsey</h3>
+          <p>Project Lead</p>
+          <a href="https://github.com/ThomasUtsey ">GitHub Portfolio</a>
+        </div>
+        <!--text closure-->
+      </section>
+
+    </main>
 
   </div>
   <!--container closure-->

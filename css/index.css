@@ -158,12 +158,33 @@ html h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container header {
+    flex-direction: column;
+  }
+}
 .container header div {
-  width: 40%;
+  width: 60%;
   margin-left: 2.5%;
+}
+@media (max-width: 500px) {
+  .container header div {
+    width: 100%;
+    margin: 2%;
+  }
 }
 .container header div h1 {
   color: #e6e8e5;
+}
+@media (max-width: 800px) {
+  .container header div h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .container header div h1 {
+    font-size: 4rem;
+  }
 }
 .container header nav {
   display: flex;
@@ -171,99 +192,235 @@ html h1 {
   width: 40%;
   align-self: center;
 }
+@media (max-width: 800px) {
+  .container header nav {
+    width: 35%;
+  }
+}
+@media (max-width: 500px) {
+  .container header nav {
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .container header nav a {
   text-decoration: none;
   color: #e6e8e5;
   font-size: 2rem;
 }
+@media (max-width: 800px) {
+  .container header nav a {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    margin: 1%;
+    padding: 2%;
+    font-size: 1.5rem;
+    border-top: 2px solid #e6e8e5;
+  }
+}
 .container header nav a:hover {
   color: white;
 }
 footer {
+  padding: 0.5%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 0.5%;
+  border-top: 1px solid #e6e8e5;
+}
+@media (max-width: 800px) {
+  footer {
+    padding: 1%;
+    border-top: 3px solid #e6e8e5;
+  }
 }
 footer p {
+  justify-self: center;
   font-size: 2rem;
   color: #e6e8e5;
 }
-section {
+@media (max-width: 800px) {
+  footer p {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  footer p {
+    margin: 1%;
+    font-size: 2rem;
+  }
+}
+.big-header {
   display: flex;
   width: 100%;
   height: 100vh;
 }
-section img {
+@media (max-width: 800px) {
+  .big-header {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+.big-header img {
   width: 100%;
   height: 100%;
   max-width: 1920px;
+}
+@media (max-width: 800px) {
+  .big-header img {
+    max-width: 1000px;
+  }
 }
 main {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
-main h2 {
+main .text {
+  width: 60%;
+  margin: 5%;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  border: 4px solid #85a04f;
+  border-radius: 1%;
+}
+@media (max-width: 800px) {
+  main .text {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  main .text {
+    margin-top: 5%;
+  }
+}
+main .text h2 {
   margin: 2%;
-  font-size: 2.5rem;
-  justify-content: center;
+  font-weight: bold;
+  font-size: 4rem;
+  align-self: center;
 }
-main p {
+@media (max-width: 800px) {
+  main .text h2 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  main .text h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+main .text p {
+  margin: 1%;
+  font-size: 3rem;
   line-height: 1.5;
+  text-align: center;
 }
-main p a {
+@media (max-width: 800px) {
+  main .text p {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  main .text p {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
+main .text p span {
+  color: #3cdbd3;
+}
+main .text p a {
   text-decoration: none;
-  color: #e6e8e5;
+  color: #85a04f;
 }
-main p a:hover {
-  color: white;
+main .text p a:hover {
+  color: #7a984d;
 }
-main button {
-  width: 10%;
-  margin: 2%;
-  font-size: 2rem;
-  color: #e6e8e5;
-  background: #85a04f;
-  border: 2px solid #e6e8e5;
-  border-radius: 5%;
+main .social {
+  margin-top: 2.5%;
+  font-size: 2.8rem;
+}
+@media (max-width: 800px) {
+  main .social {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  main .social {
+    font-size: 2.8rem;
+  }
 }
 main .icons {
   width: 20%;
-  margin: 1%;
+  margin: 2%;
+  font-size: 3.3rem;
   display: flex;
   text-align: center;
   justify-content: space-evenly;
 }
-.about-container {
-  width: 100%;
+@media (max-width: 800px) {
+  main .icons {
+    font-size: 5rem;
+    margin: 3%;
+  }
 }
-.about-container .about-header {
-  width: 100%;
-  padding: 1%;
-  display: flex;
-  justify-content: space-between;
+@media (max-width: 500px) {
+  main .icons {
+    font-size: 3.3rem;
+  }
 }
-.about-container .about-header .about-div {
-  width: 40%;
+main .icons a {
+  color: #3cdbd3;
+}
+#about-h1 {
+  width: 90%;
   margin-left: 2.5%;
 }
-.about-container .about-header .about-div #about-h1 {
-  color: #e6e8e5;
+@media (max-width: 500px) {
+  #about-h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
-.about-container .about-header .about-nav {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-  align-self: center;
+@media (max-width: 500px) {
+  #about-main {
+    width: 100%;
+    margin-bottom: 2%;
+  }
 }
-.about-container .about-header .about-nav a {
-  color: #e6e8e5;
-  text-decoration: none;
+@media (max-width: 500px) {
+  #about-main h2 {
+    padding-top: 40%;
+  }
 }
-.about-container .about-header .about-nav a:hover {
-  color: white;
+@media (max-width: 500px) {
+  #about-main .about-section {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 500px) {
+  #about-main .about-section .people-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #about-main .about-section .people-text p {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+@media (max-width: 500px) {
+  #about-main .about-section .people-text a {
+    font-size: 1rem;
+  }
 }
